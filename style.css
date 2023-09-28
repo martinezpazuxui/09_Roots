@@ -5,3 +5,8 @@
 .navbar a{
     color: white;
 }
+
+.img-portada {
+    background-color: none;
+    background-image: url(assets/images/bg-landing.jpg);
+}

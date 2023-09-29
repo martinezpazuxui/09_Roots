@@ -10,3 +10,98 @@
     background-color: none;
     background-image: url(assets/images/bg-landing.jpg);
 }
+
+.bg-color {
+    background-color: #226412;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "portada portada"
+        "noticias noticias"
+        "shows shows"
+        "footer footer";
+    grid-template-rows: 80px auto auto auto 150px;
+    grid-template-columns: auto auto;
+    background: url(img/bg-landing.jpg);
+}
+
+section#shows {
+    grid-area: shows;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    max-width: 500px;
+    align-items: center;
+}
+
+.titulo-shows {
+    width: 80%;
+    padding: 20px 0px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja-tabla {
+    width: 80%;
+    height: 100%;
+    padding: 20px 0px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla {
+    height: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    flex: 1;
+    padding: 20px 0;
+}
+
+.tabla table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.tabla td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.tabla tr {
+    border-bottom: 1px solid #ffffff;
+}
+
+.text-location {
+    text-align: center;
+}
+
+.text-date {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+  .caja-tabla {
+    width: 100%; /* Ocupar todo el ancho de la pantalla en dispositivos móviles */
+    padding: 10px 0px; /* Reduce el espacio interior */
+  }
+
+  .tabla {
+    overflow-x: auto; /* Agregar una barra de desplazamiento horizontal para tablas grandes */
+  }
+
+  .tabla table {
+    width: 100%; /* Hacer que la tabla ocupe todo el ancho del contenedor */
+    table-layout: auto; /* Permitir que la tabla se ajuste automáticamente al contenido */
+  }
+}
+

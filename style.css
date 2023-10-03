@@ -36,6 +36,10 @@ section#shows {
     align-items: center;
 }
 
+.noticias---rock {
+    padding-bottom: 3em;
+}
+
 .titulo-shows {
     width: 80%;
     padding: 20px 0px;
